@@ -1,0 +1,32 @@
+<style>
+    .arrow-shape {
+      width: 200px;
+      height: 200px;
+      border: 5px solid rgb(221, 43, 43);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .one {
+      width: 100px;
+      height: 50px;
+      background-color: rgb(233, 224, 224);
+      border: 1px solid rgb(233, 224, 224);
+      position: relative;
+    }
+  
+    .one::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -1px; /* Aligns the arrow without using margin */
+      border-top: 25px solid transparent;
+      border-right: 25px solid rgb(139, 44, 44);
+      border-bottom: 25px solid transparent;
+    }
+  </style>
+  
+  <div class="arrow-shape">
+    <div class="one"></div>
+  </div>

@@ -1,0 +1,796 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+   
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.page1{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aqua; */
+}
+
+.top{
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between; 
+
+}
+.icar{
+    border: 1px solid black;
+  
+    display: flex;
+   
+
+}
+.arrow-container{
+    margin-left: 30px;
+}
+.square i{
+    color: white;
+}
+.square {
+    width: 50px;
+    height: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    
+    background-color: #3498db;
+    background-color: rgb(41, 40, 40);
+    /* position: relative; */
+
+    /* margin: 0 auto; */
+}
+
+/* Triangle part of the arrow */
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 10px solid rgb(41, 40, 40);
+    position: absolute;
+    top: 30px;
+    bottom: 0px;
+    left: 31px;
+    /* margin: 0 auto; */
+}
+
+/* Container to position both elements together */
+/* .arrow-container {
+    margin-top: 0px;
+    text-align: center;
+} */
+/* .navbar{
+    border: 1px solid rgb(63, 61, 61);
+   
+} */
+
+
+.navbar{
+
+    position: fixed;
+    margin-left: 10%;
+    z-index: 1;
+    margin-top: 20px;
+    width: 600px;
+    height: 40px;
+    /* border: 2px solid red; */
+    border-radius: 20px; 
+    backdrop-filter: blur(10px); 
+    display: flex; 
+   align-items: center;
+   justify-content: center;
+
+    
+    
+}
+.navbar  a{
+    /* background-color: #000000; */
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+    /* padding: 15px 0;
+    top: 10px;
+        left: 0;
+        width: 20%;
+        padding: 6px; */
+    font-size: larger;
+    position: relative;
+  align-items: center;
+  
+}
+.navbar a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: gold;
+    transition: width 1.5s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+.mid{
+    width: 100%;
+    height: 12%;
+    background-color: black;
+}
+.mid h1{
+    color: white;
+    font-size: 60px;
+    font-weight: lighter;
+    margin-left: 200px;
+}
+
+/* section 1 half part start */
+.box{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    background: transparent;
+    display: flex;
+   
+}
+.box .box1{
+    width: 50%;
+    height: 68%;
+    background-color: rgb(211, 50, 189);
+}
+
+.box1{
+    display: flex;
+}
+
+.boxin{
+    width: 50%;
+    height: 100%;
+    background-color: #000000;
+}
+
+.box1{
+    background-color: #4ab1b3;
+    background-color: #000000;
+    background-image: url("https://media.istockphoto.com/id/908021140/photo/silhouette-of-black-sports-car-on-black.webp?a=1&b=1&s=612x612&w=0&k=20&c=iq4sZLWzEy1RKaYiu5My4mU-Q7WpG6es6B1EhRZrgKo=");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.iconC{
+    color: white;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+.box1 .img{
+    border: 1px solid rgb(209, 202, 202);
+    width:70%;
+    margin-top: 20%;
+    border: none;
+}
+
+
+.box .box2{
+    width: 50%;
+    height: 68%;
+    color: white;
+    background-color: black;
+}
+
+.box2{
+    width: 100%;
+    height: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    border: none;
+}
+.box2 h1{
+    font-size: 30px;
+}
+.box2 p{
+    border-left: 3px solid whitesmoke;
+    font-size: 20px;
+    padding: 5px;
+}
+.cir {
+    display: inline-block;
+}
+
+.truck{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+.truck .car1{
+    background-image: url("https://media.istockphoto.com/id/910009838/photo/modern-black-metallic-sedan-car-in-spotlight-generic-desing-brandless.webp?a=1&b=1&s=612x612&w=0&k=20&c=4xr0yAfcajt8MuD1Ob1qbvMzjogUu53CnXibLlTkz8M=");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    border: none; 
+}
+.truck .car2{
+  
+    background-image: url("https://media.istockphoto.com/id/911192004/photo/car-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=SPxncYyXoHvFTCvE4vKdHI09xOP9bEEtTmZ2Za1asUM=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;  
+}
+
+.car{
+    width: 50%;
+    height: 150px;
+    border: 2px solid rgb(255, 253, 253);
+}
+
+
+/* section 1 half part end */
+
+
+
+.page2 {
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(125, 212, 20);
+}
+
+.logo-section {
+    width: 100%;
+    height: 22%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.logos img {
+    width: 100px;
+    height: 80x;
+}
+
+
+.logosec2{
+    width: 100%;
+    height: 78%;
+    background-color: #4ab1b3;
+    display: flex;
+}
+.logosec2 .Blog1{
+    width: 50%;
+    height: 100%;
+    color: aliceblue;
+    background-color: black;
+    position: relative;
+}
+.logosec2 .Blog2{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(167, 32, 197);
+    background-image: url("https://images.unsplash.com/flagged/photo-1576753242380-8ac21e049a20?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDZ8fHxlbnwwfHx8fHw%3D");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    border: none; 
+}
+.Blog1 .b1{
+   position: absolute;
+   font-size: xx-large;
+   top: 60px;
+}
+.clen{
+    width: 100%;
+    height: 10%;
+    border: 1px solid ;
+    margin-top: 20%;
+    margin-bottom: 20px;
+    align-content: center;
+    text-align: center;
+}
+
+
+ /* mmmmmmmmmmmmm */
+.arrow-shape {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .one {
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(to right, black, gold);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    align-content: center;
+    position: relative;
+  }
+
+  .one::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1px; /* Aligns the arrow without using margin */
+    border-top: 25px solid transparent;
+    border-right: 25px solid rgb(0, 0, 0);
+    border-bottom: 25px solid transparent;
+  }
+  .Blog1 p {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+/* <!-- page 2 OR section 2 End --> */
+.page3 {
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(125, 212, 20);
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/612/507/644/lamborghini-monochrome-car-supercars-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+/* Page 3 section */
+.page3 {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Heading */
+.heading {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+/* Option Box */
+.option-box {
+    width: 100%;
+    height: 40%;
+    position: relative; /* Make the parent element relative */
+}
+
+/* Positioning the options at the corners */
+/* .option {
+    width: 30%;
+    height: 90px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: absolute; 
+} */
+.option {
+    width: 30%;
+    height: 90px;
+    background-color: transparent;
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Vertically center the content */
+    overflow: hidden;
+    justify-content: flex-start; /* Align content to the start (left) */
+    position: absolute; /* Absolute positioning */
+    padding-left: 0; /* Remove left padding */
+}
+
+.option i {
+    font-size: 40px; /* Adjust the size of the icon */
+    margin-right: 10px; /* Add space between the icon and the text */
+}
+
+/* Top-left box */
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+/* Top-right box */
+.top-right {
+    top: 0;
+    right: 0;
+}
+
+/* Bottom-left box */
+.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+/* Bottom-right box */
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+/* Cards Section */
+
+.rcard{
+    width: 100vw;
+    height: 50%;
+    display: flex;
+    /* justify-content: space-around; */
+    /* gap: 30px; */
+    align-items: center; 
+    margin-right: 30px;
+}
+.rcard .heacard{
+    width: 25%;
+    height: 80%;
+    background-color: transparent;
+    margin-left: 40px;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    text-align: left;
+    background-color: transparent;
+    padding-left: 20px;
+    border-radius: 8px;
+   box-shadow: 0px 0px 15px rgba(0,0,0,0.1) ;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-size: large;
+    overflow: hidden;
+    /* margin: auto; */
+}
+
+.row {
+    margin: 20px 0;
+}
+
+/* Fourth Row Styles */
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.arrow-box {
+    background-color: #3498db;
+}
+
+/* Arrow dimensions */
+.arrow-1 {
+    width: 20px;
+    height: 3px;
+}
+
+.arrow-2 {
+    width: 10px;
+    height: 3px;
+}
+
+.arrow-3 {
+    width: 10px;
+    height: 3px;
+}
+
+.cards {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.card {
+    width: 200px;
+    height: 70%;
+    background-color: transparent;
+   
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 1rem;
+    overflow: hidden;
+    border-radius: 10px;
+   border: 1px solid white;
+    padding: 10px;
+}
+
+
+
+
+
+
+/* <!-- page 3 OR section 3 End --> */
+.page4 {
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(212, 183, 20);
+}
+.page4 {
+    font-family: Arial, sans-serif;
+     width: 100vw;
+     height: 100vh;
+     background-color: rgb(212, 183, 20);
+     position: relative; /* Make it a positioned element for absolute children */
+     overflow: auto; /* Allow scrolling if content overflows */
+     padding: 20px; /* Add some padding for aesthetics */
+     background-image: url("https://wallpapers.com/images/hd/black-car-4k-a6ay51d8d0pyex23.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ 
+ /* Features list styles */
+ .features-list {
+     position: absolute; /* Position relative to the section */
+   
+    top: 100px;
+    left: 50px;
+    color: white;
+    
+
+ }
+ 
+ /* Individual feature item styles */
+ .feature-item {
+     display: flex;
+     align-items: center; /* Center icon and text vertically */
+     margin: 10px 0; /* Space between items */
+ }
+ 
+ .icon {
+     margin-right: 10px; /* Space between icon and text */
+     font-size: 24px; /* Icon size */
+ }
+
+
+
+
+
+
+/* <!-- page 4OR section 4 End --> */
+/* General styles for the page */
+
+
+/* Section styling */
+.page5 {
+    width: 100vw;
+    height: 100vh;
+    background-color:black;
+    display: flex;
+    flex-direction: column; /* Stack top and bottom containers vertically */
+}
+
+/* Top container styles */
+.top-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    width: 100%;
+    height: 50%; /* 50% height of the page */
+}
+
+/* Left and right boxes */
+.leftbx, .rightbx {
+    width: 50%; /* Each takes 50% of the width */
+    height: 100%; /* Full height of the top container */
+    padding: 20px; /* Add padding for aesthetics */
+    box-sizing: border-box; /* Include padding in height and width */
+}
+
+/* Bottom container styles */
+.bottom-container {
+    display: flex; /* Use flexbox for vertical layout */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%;
+    height: 50%; /* 50% height of the page */
+ 
+
+}
+
+/* Top and bottom bottom styles */
+.top-bottom, .bottom-bottom {
+    height: 50%; /* Each takes 50% of the bottom container's height */
+    padding: 20px; /* Add padding for aesthetics */
+    box-sizing: border-box; /* Include padding in height */
+    margin: 0px 30px;
+    color: white;
+}
+
+/* Optional: background colors for visual distinction */
+.leftbx {
+    background-color: rgba(255, 255, 255, 0.8); /* Light color for visibility */
+    background-image: url("https://www.shutterstock.com/image-illustration/kazakhstan-almaty-january-20-2020-600nw-1626510844.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rightbx {
+    background-color: rgb(0, 0, 0); /* Slightly darker */
+}
+.rightbx {
+    color: white;
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: center; /* Center content vertically */
+    padding: 20px; /* Add padding for aesthetics */
+    height: 100%; /* Full height of the top container */
+    box-sizing: border-box; /* Include padding in height */
+}
+
+  .rightbx .arrow-shape {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+      }
+    
+.rightbx .one {
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(to right,  gold ,black); /* Keep the gradient */
+    text-align: center;
+    margin-top: 20%; 
+    margin-bottom: 20px;
+    align-content: center;
+    position: relative;
+    color: white;
+}
+
+.rightbx .one::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px; /* Change to left to position the triangle on the left */
+    border-top: 25px solid transparent;
+    border-left: 25px solid black; /* Change color to black */
+    border-bottom: 25px solid transparent;
+}
+
+    
+
+
+.top-bottom {
+    height: 30%;
+    background-color:transparent; /* Another shade */
+    display: flex;
+    justify-content: space-between;border-bottom: 4px solid white;
+    margin: 0px 30px;
+    color: white;
+    background-image: url("");
+
+
+}
+
+.bottom-bottom {
+    margin: 0px ;
+    width: 100%;
+    height: 70%;
+    background-color:transparent; /* Another shade */
+    padding: 0%;
+    background-image: url("https://plus.unsplash.com/premium_photo-1672940670623-b10bb537e9c6?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2slMjBiZ3xlbnwwfHwwfHx8MA%3D%3D");
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgba(169, 20, 20, 0.8);
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h1, p {
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    
+}
+
+/* Parent div to hold all sections in a row */
+.bottom-bottom .container-row {
+    display: flex;
+    width: 100%;
+    height: 100%; 
+}
+
+/* First div: Subscribe Section */
+.subscribe-section {
+    width: 33.33%; /* Each section takes 1/3 of the width */
+    background-color: rgba(169, 20, 20, 0.8);
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Second div: Contact Section */
+.contact-section {
+    width: 25%;
+    background-color: transparent;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Third div: Table Section */
+.table-section {
+    width: 33%;
+    background-color: transparent;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 50px;
+}
+
+.table-section ul ,th {
+    text-align: left;
+}
+.table-section th{
+    font-size: x-large;
+    color: gold;
+}
+/* Fourth div: Footer Section */
+.footer-section {
+    width: 100%;
+    height: 20%; /* 20% height */
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries */
+
+
+

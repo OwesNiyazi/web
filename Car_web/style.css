@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(225, 217, 217);
+}
+ 
+.top{
+    width: 100vw;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between; 
+
+}
+.icar{
+    border: 1px solid black;
+  
+    display: flex;
+   
+
+}
+.arrow-container{
+    margin-left: 30px;
+}
+.square {
+    width: 50px;
+    height: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    
+    background-color: #3498db;
+    background-color: rgb(41, 40, 40);
+    /* margin: 0 auto; */
+}
+
+/* Triangle part of the arrow */
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 10px solid rgb(41, 40, 40);
+    /* margin: 0 auto; */
+}
+
+/* Container to position both elements together */
+/* .arrow-container {
+    margin-top: 0px;
+    text-align: center;
+} */
+.navbar{
+    border: 1px solid black;
+   
+}
+ul{
+   list-style: none;
+   margin-right: 50px;
+
+}
+.mid{
+    width: 100vw;
+    background-color: #000000;
+    /* text-align: center; */
+   
+}
+.mid h1{
+    margin-right:165px ;
+    padding-top: 38px;
+    font-size: 80px;
+}
+.box2{
+    width: 100vw;
+    height: 50vh;
+    background-color: #95edd5;
+   display: flex;
+}
+.boxlef{
+    display: flex;
+}
+
+.boxin{
+    width: 50%;
+    height: 100%;
+    background-color: #000000;
+}
+
+.boxlef{
+    background-color: #4ab1b3;
+    background-color: #000000;
+    background-image: url("https://media.istockphoto.com/id/908021140/photo/silhouette-of-black-sports-car-on-black.webp?a=1&b=1&s=612x612&w=0&k=20&c=iq4sZLWzEy1RKaYiu5My4mU-Q7WpG6es6B1EhRZrgKo=");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.iconC{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+.boxlef .img{
+    border: 1px solid rgb(209, 202, 202);
+    width:70%;
+    margin-top: 20%;
+    border: none;
+}
+/* .img{
+    background-image: url("https://plus.unsplash.com/premium_photo-1686730540270-93f2c33351b6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2slMjBjYXJ8ZW58MHx8MHx8fDA%3D");
+    background-repeat: no-repeat;
+    background-size: cover;   
+} */
+ /* .img img{
+   width: 100%;
+   
+ } */
+.bus{
+    width: 100%;
+    height: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    border: none;
+}
+.bus h1{
+    font-size: 30px;
+}
+.bus p{
+    border-left: 3px solid whitesmoke;
+    font-size: 20px;
+    padding: 5px;
+}
+.cir {
+    display: inline-block;
+}
+
+.truck{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+.truck .car1{
+    background-image: url("https://media.istockphoto.com/id/910009838/photo/modern-black-metallic-sedan-car-in-spotlight-generic-desing-brandless.webp?a=1&b=1&s=612x612&w=0&k=20&c=4xr0yAfcajt8MuD1Ob1qbvMzjogUu53CnXibLlTkz8M=");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    border: none; 
+}
+.truck .car2{
+  
+    background-image: url("https://media.istockphoto.com/id/911192004/photo/car-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=SPxncYyXoHvFTCvE4vKdHI09xOP9bEEtTmZ2Za1asUM=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;  
+}
+
+.car{
+    width: 50%;
+    height: 150px;
+    border: 2px solid rgb(255, 253, 253);
+}
+
+
+.part-logo{
+    width: 100vw;
+    height: 100vh;
+    background: #0000009f;
+}
+.logo-section {
+    width: 100vw;
+    height: 60px;
+    background-color: #423f3f;
+    /* background-color: #000000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact {
+    width: 200px;
+    height: 50px;
+   color: #ffffff;
+    background: linear-gradient(to right, black, gold);
+    text-align: center;
+    align-content: center;
+}
+.contact .t2{
+    /* background: #000; */
+    position: absolute;
+    left: 50px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 15px solid #ffffff;
+}
+.contact .t2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    left: 185px;
+    top: 522px;
+    border-width: 25px 15.6px 26px 0px;
+    border-color: transparent rgb(0, 0, 0) transparent transparent;
+}
+  /* .contact .t2{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 86.6px 50px 0;
+    border-color: transparent orange transparent transparent;
+  } */
+.logos {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    background-color: #3a3838;
+   
+}
+
+.logos img {
+    width: 40px; 
+    height: 40px;
+}
+.logosec3{
+    background-color: #000000;
+}
+.logosec2{
+    background-color: #000000;
+}
